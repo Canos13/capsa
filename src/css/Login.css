@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    max-width: 1200px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+._twoColumns{ display: flex; }
+._info{ width: 30%;          }
+._form{ 
+    width: 70%;
+    height: 100%;
+    position: sticky;
+    top: 20px;   
+}
+._login_btn{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+._img_logo_mv{ display: none; }
+._imgs{  padding: 0 30px;    }
+._logo{ text-align: center;  }
+._news{ margin-top: 40px;    }
+._img_logo,
+._img_logo_mv{ height: 110px; }
+._login{ 
+    text-align: center;
+    padding:20px 30px; 
+}
+.shadow{ filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.162)); }
+.carousel{ height: 100% !important; }
+.noCliked{ color: rgb(153, 152, 152) !important; }
+.Cliked{ color: rgba(224, 19, 19, 0.829) !important; }
+._img_corousel{
+    height: 320px;
+    object-fit: cover;
+}
+
+.glass{
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    padding: 0 10px;
+}
+
+.carousel-caption{
+    bottom: 10.25rem !important;
+}
+
+@media (max-width: 900px) {
+    ._twoColumns{ flex-direction: column-reverse; }
+    ._form{ 
+        width: 100%;
+        position: static; 
+    }
+    ._info{ width: 100%;}
+    ._news{
+        padding: 0 30px;
+        margin-top: 15px; 
+    }
+    .mvcenter{
+        margin: 0 auto;
+    }
+
+    ._logo{
+        display: none;
+    }
+
+    ._img_logo_mv{
+        display: block;
+        margin: 0 auto;
+    }
+}
