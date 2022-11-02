@@ -10,6 +10,11 @@
     margin: 20px auto;
 }
 
+.weather{
+    margin-top: 20px;
+    text-align: center;
+}
+
 ._twoColumns{ display: flex; }
 ._info{ width: 30%;          }
 ._form{ 
@@ -22,15 +27,15 @@
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    margin-bottom: 25px !important ;
 }
 ._img_logo_mv{ display: none; }
 ._imgs{  padding: 0 30px;    }
 ._logo{ text-align: center;  }
-._news{ margin-top: 40px;    }
+._news{ margin-top: 28px;    }
 ._img_logo,
 ._img_logo_mv{ height: 110px; }
 ._login{ 
-    text-align: center;
     padding:20px 30px; 
 }
 .shadow{ filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.162)); }
