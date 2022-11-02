@@ -23,7 +23,7 @@ const Login = () => {
     }, [])
 
     const loadInfo = async () => {
-        const res = await fetch(`http://api.weatherunlocked.com/api/current/${latlong}?lang=es&app_id=${APP_ID}&app_key=${APP_KEY}`);
+        const res = await fetch(`https://api.weatherunlocked.com/api/current/${latlong}?lang=es&app_id=${APP_ID}&app_key=${APP_KEY}`);
         const data = await res.json();
         setWeather(data);
     }
