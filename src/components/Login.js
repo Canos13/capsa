@@ -19,14 +19,13 @@ const Login = () => {
     const latlong = '19.04,-98.04'
 
     useEffect(() => { 
-        /* loadInfo() */
+        loadInfo()
     }, [])
 
     const loadInfo = async () => {
         const res = await fetch(`http://api.weatherunlocked.com/api/current/${latlong}?lang=es&app_id=${APP_ID}&app_key=${APP_KEY}`);
         const data = await res.json();
         setWeather(data);
-        console.log(data)
     }
  
     const handlelogin = () => {
