@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.52f18b82.css",
-    "main.js": "/static/js/main.4b6d0f28.js",
+    "main.js": "/static/js/main.48ccc546.js",
     "static/js/787.947d19aa.chunk.js": "/static/js/787.947d19aa.chunk.js",
     "static/media/AEREAMOZOC.jfif": "/static/media/AEREAMOZOC.52c704a726d320ba66e2.jfif",
     "static/media/autopistaamozocperote140220.jpg": "/static/media/autopistaamozocperote140220.54237a037a4d21ecd0ca.jpg",
@@ -10,11 +10,11 @@
     "static/media/carreterass.png": "/static/media/carreterass.af78f52d1f9ee002ed10.png",
     "index.html": "/index.html",
     "main.52f18b82.css.map": "/static/css/main.52f18b82.css.map",
-    "main.4b6d0f28.js.map": "/static/js/main.4b6d0f28.js.map",
+    "main.48ccc546.js.map": "/static/js/main.48ccc546.js.map",
     "787.947d19aa.chunk.js.map": "/static/js/787.947d19aa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.52f18b82.css",
-    "static/js/main.4b6d0f28.js"
+    "static/js/main.48ccc546.js"
   ]
 }
