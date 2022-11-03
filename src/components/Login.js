@@ -13,20 +13,16 @@ import Clima from './Clima';
 
 const Login = () => {
 
-    const [weather, setWeather] = useState(null);
-    const APP_ID = '3b7d29e7';
-    const APP_KEY = '4b9babb96839deb54fce1361c6f2258b';
-    const latlong = '19.04,-98.04'
+    const [weather, setWeather] = useState({});
 
     useEffect(() => { 
-        loadInfo()
+        ( async (city = "Amozoc de Mota") =>{
+            const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=e44826d22bbc45aca66185622220111&q=${city}}&aqi=no&lang=es`);
+            const data = await response.json();
+            console.log(data)
+            setWeather(data);
+        } )()
     }, [])
-
-    const loadInfo = async () => {
-        const res = await fetch(`https://api.weatherunlocked.com/api/current/${latlong}?lang=es&app_id=${APP_ID}&app_key=${APP_KEY}`, { mode: 'no-cors'});
-        const data = await res.json();
-        setWeather(data);
-    }
  
     const handlelogin = () => {
         window.location.href = 'https://victum2.southcentralus.cloudapp.azure.com/';
@@ -41,11 +37,11 @@ const Login = () => {
                 </section>
                 <section className='weather'>
                     {
-                        (!weather)?(
+                         (!weather)?(
                             <h3>Cargando...</h3>
                         ) : (  
                             <Clima weather={weather} />
-                        )                        
+                        )                         
                     }
                 </section>
                 <section className='_news'>
