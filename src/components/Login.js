@@ -13,7 +13,7 @@ import Clima from './Clima';
 
 const Login = () => {
 
-    const [weather, setWeather] = useState({});
+    const [weather, setWeather] = useState(null);
 
     useEffect(() => { 
         ( async (city = "Amozoc de Mota") =>{
