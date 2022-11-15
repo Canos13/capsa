@@ -17,16 +17,14 @@ const Login = () => {
 
     useEffect(() => { 
         ( async (city = "Amozoc de Mota") =>{
-            const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=e44826d22bbc45aca66185622220111&q=${city}}&aqi=no&lang=es`);
+            const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=a4652236dbd84528ad3171710221511&q=${encodeURI(city)}}&aqi=no&lang=es`);
             const data = await response.json();
             console.log(data)
             setWeather(data);
         } )()
     }, [])
  
-    const handlelogin = () => {
-        window.location.href = 'https://victum2.southcentralus.cloudapp.azure.com/';
-    }
+    const handlelogin = () => window.location.href = 'https://victum2.southcentralus.cloudapp.azure.com/';
 
     return (
         <section className='_twoColumns contenedor'>
