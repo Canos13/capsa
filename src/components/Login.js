@@ -17,7 +17,7 @@ const Login = () => {
 
     useEffect(() => { 
         ( async (city = "Amozoc de Mota") =>{
-            const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=c145760b6bc34080aaa165038222911&q=${encodeURI(city)}}&aqi=no&lang=es`);
+            const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=e648ba191b6b48ab875162613221312&q=${encodeURI(city)}}&aqi=no&lang=es`);
             const data = await response.json();
             console.log(data)
             setWeather(data);
