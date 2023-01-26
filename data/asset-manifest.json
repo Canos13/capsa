@@ -1,20 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.52f18b82.css",
-    "main.js": "/static/js/main.9d58d7e6.js",
+    "main.css": "/static/css/main.d9bf34b8.css",
+    "main.js": "/static/js/main.c0ff0a28.js",
     "static/js/787.947d19aa.chunk.js": "/static/js/787.947d19aa.chunk.js",
-    "static/media/AEREAMOZOC.jfif": "/static/media/AEREAMOZOC.52c704a726d320ba66e2.jfif",
-    "static/media/autopistaamozocperote140220.jpg": "/static/media/autopistaamozocperote140220.54237a037a4d21ecd0ca.jpg",
     "static/media/ramal.jpg": "/static/media/ramal.ef889ec8e6c3cb3112ea.jpg",
-    "static/media/autopista-Amozoc-Perote.jpg": "/static/media/autopista-Amozoc-Perote.808c7574e8f53a6172df.jpg",
     "static/media/carreterass.png": "/static/media/carreterass.af78f52d1f9ee002ed10.png",
     "index.html": "/index.html",
-    "main.52f18b82.css.map": "/static/css/main.52f18b82.css.map",
-    "main.9d58d7e6.js.map": "/static/js/main.9d58d7e6.js.map",
+    "main.d9bf34b8.css.map": "/static/css/main.d9bf34b8.css.map",
+    "main.c0ff0a28.js.map": "/static/js/main.c0ff0a28.js.map",
     "787.947d19aa.chunk.js.map": "/static/js/787.947d19aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52f18b82.css",
-    "static/js/main.9d58d7e6.js"
+    "static/css/main.d9bf34b8.css",
+    "static/js/main.c0ff0a28.js"
   ]
 }
