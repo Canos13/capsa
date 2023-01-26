@@ -39,7 +39,8 @@ const Layout = ({route,children}) => {
         {id: 2, icon: <InstagramIcon />, to:'https://www.instagram.com/' },
         {id: 3, icon: <TwitterIcon />, to:'https://twitter.com/' }
     ]
-    const navigateHome = () => { navigate('/') }
+    const navigateHome = () => navigate('/');
+    const navigateVSGA = () => window.location.href = 'https://victum2.southcentralus.cloudapp.azure.com/';
     return (
         <>
             <Navbar expand="lg">
@@ -57,7 +58,7 @@ const Layout = ({route,children}) => {
                 <section className='_info'>
                     <section className='_logo'>
                         <HomeIcon onClick={navigateHome} className="_img_logo hov"/>
-                        <Button type="button" className="_login_btn w-100" variant="success">
+                        <Button onClick={navigateVSGA} type="button" className="_login_btn w-100" variant="success">
                             <LoginIcon className='mx-2' /><h4 className='d-inline mb-0'>Ir a Victum SGA</h4> 
                         </Button>
                     </section>
