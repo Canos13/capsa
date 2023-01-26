@@ -7,28 +7,38 @@
 .contenedor{
     max-width: 1200px;
     width: 95%;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .weather{
-    margin-top: 20px;
+    width: 45%;
     text-align: center;
 }
 
 ._twoColumns{ display: flex; }
-._info{ width: 30%;          }
+._info{ width: 35%;          }
 ._form{ 
-    width: 70%;
+    width: 65%;
     height: 100%;
     position: sticky;
-    top: 20px;   
+    top: 20px;
+    margin-left: 10px;
 }
 ._login_btn{
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    margin-bottom: 25px !important ;
+    margin: 20px 0 !important ;
 }
+._img_logo{
+    width: 3rem !important;
+    height: 3rem !important;
+}
+
+.hov:hover{
+    cursor: pointer;
+}
+
 ._img_logo_mv{ display: none; }
 ._imgs{  padding: 0 30px;    }
 ._logo{ text-align: center;  }
@@ -36,7 +46,7 @@
 ._img_logo,
 ._img_logo_mv{ height: 110px; }
 ._login{ 
-    padding:20px 30px; 
+    padding:0 10px; 
 }
 .shadow{ filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.162)); }
 .carousel{ height: 100% !important; }
