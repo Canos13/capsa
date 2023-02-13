@@ -13,8 +13,7 @@ function Bar() {
     const handleRedirect = to => window.location.href = to;
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
-            <Container >
-                {/* <Navbar.Brand href="#home"><h3>Capsa</h3></Navbar.Brand> */}
+            <Container>
                 <Link to="/" className='text-white nav-link'><h3>Capsa</h3></Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
