@@ -56,7 +56,7 @@ const Login = () => {
                         </section>
                         <section className='text-center'>
                             <a href='https://play.google.com/store/apps/details?id=com.gigigo.aleatica' target="_blank" rel="noreferrer" className='des_app'>
-                                <h5 className='mt-3'>Descarga la App de aleática</h5>
+                                <h5 className='mt-3'>Descarga la App de Aleática</h5>
                             </a>
                                 <h5>Tels: 800 836 8580 y 800 8363580</h5>
                                 <h6 className='correo'>atencionusuariosgana@ganamexico.com.mx</h6>
