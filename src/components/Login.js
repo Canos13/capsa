@@ -27,7 +27,8 @@ const Login = () => {
         } )()
     }, [])
  
-    const handlelogin = () => window.location.href = 'https://victum2.southcentralus.cloudapp.azure.com/';
+    /* const handlelogin = () => window.location.href = 'https://victum2.southcentralus.cloudapp.azure.com/'; */
+    const handlelogin = () => window.location.href = 'https://victum.eastus.cloudapp.azure.com/';
 
     return (
         <>

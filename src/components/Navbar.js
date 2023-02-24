@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function Bar() {
 
     const externalLink = [
-        {id: 1, name: 'SGA-Victum', to:'https://victum2.southcentralus.cloudapp.azure.com/'},
+        {id: 1, name: 'SGA-Victum', to:'https://victum.eastus.cloudapp.azure.com/'},
         {id: 2, name: 'Proveedores', to:'https://victum-re.online/'},
         {id: 3, name: 'Facturación', to:'https://www.gana-mexico.com.mx/home'},
     ]
