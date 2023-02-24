@@ -19,12 +19,24 @@ const Login = () => {
     const [weather, setWeather] = useState(null);
 
     useEffect(() => { 
-        ( async (city = "Amozoc de Mota") =>{
-            const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=e648ba191b6b48ab875162613221312&q=${encodeURI(city)}}&aqi=no&lang=es`);
-            const data = await response.json();
-            console.log(data)
-            setWeather(data);
-        } )()
+        ( async () =>{
+            const cities = ['Amozoc de Mota', 'Cuapiaxtla','Guadalupe Sarabia', 'Perote'];
+            const promises = [];
+
+            for (const city of cities) {
+                const promise = fetch(`https://api.weatherapi.com/v1/current.json?key=e648ba191b6b48ab875162613221312&q=${encodeURI(city)}&aqi=no&lang=es`);
+                promises.push(promise);
+            }
+
+            try {
+                const responses = await Promise.all(promises);
+                const data = await Promise.all(responses.map(response => response.json()));
+                setWeather(data);
+                /* console.log(data); */
+            } catch (error) {
+                console.error(error);
+            }
+        })()
     }, [])
  
     /* const handlelogin = () => window.location.href = 'https://victum2.southcentralus.cloudapp.azure.com/'; */
